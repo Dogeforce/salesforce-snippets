@@ -19,5 +19,20 @@
             "}"
         ],
         "description": "A full invocable action snippet."
-    }
+    },
+    "Sort List To Indexed Map": {
+        "scope": "apex",
+        "prefix": "sortlisttomap",
+        "body": [
+            "Map<${1:KeyType}, List<${2:Type}>> ${3:mapName} = new Map<${1:KeyType}, List<${2:Type}>>();",
+            "\t",
+            "for (${2:Type} ${4:variableName} : ${5:listName}) {",
+            "\tif (!${3:mapName}.containsKey(${4:variableName}.${6:field})) {",
+            "\t\t${3:mapName}.put(${4:variableName}.${6:field}, new List<${2:Type}>());",
+            "\t}",
+            "\t${3:mapName}.get(${4:variableName}.${6:field}).add(${4:variableName});",
+            "}"
+        ],
+        "description": "Sort a list of objects into a map of objects by a key field."
+    },
 }
