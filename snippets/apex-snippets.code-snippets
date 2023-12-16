@@ -1,5 +1,6 @@
 {
     "List": {
+        "scope": "apex",
         "prefix": "newlist",
         "body": [
             "List<${1:Object}> ${2:name} = new List<${1:Object}>();"
@@ -7,6 +8,7 @@
         "description": "Apex List declaration"
     },
     "Set": {
+        "scope": "apex",
         "prefix": "newset",
         "body": [
             "Set<${1:Object}> ${2:name} = new Set<${1:Object}>();"
@@ -14,6 +16,7 @@
         "description": "Apex Set declaration"
     },
     "Map": {
+        "scope": "apex",
         "prefix": "newmap",
         "body": [
             "Map<${1:Key}, ${2:Value}> ${3:name} = new Map<${1:Key}, ${2:Value}>();"
@@ -21,6 +24,7 @@
         "description": "Apex Map declaration"
     },
     "If": {
+        "scope": "apex",
         "prefix": "if",
         "body": [
             "if (${1:condition}) {",
@@ -30,6 +34,7 @@
         "description": "if"
     },
     "If-Else": {
+        "scope": "apex",
         "prefix": "ifelse",
         "body": [
             "if (${1:condition}) {",
@@ -42,6 +47,7 @@
         "description": "If else"
     },
     "Switch statement": {
+        "scope": "apex",
         "prefix": "switch",
         "body": [
             "switch on ${1:expression} {",
@@ -59,6 +65,7 @@
         "description": "Switch case"
     },
     "Traditional for loop": {
+        "scope": "apex",
         "prefix": "fort",
         "body": [
             "for (Integer ${1:i} = 0; ${1:i} < ${2:length}; ${1:i}++) {",
@@ -68,6 +75,7 @@
         "description": "Traditional for loop"
     },
     "Advanced for loop": {
+        "scope": "apex",
         "prefix": "fora",
         "body": [
             "for (${1:type} ${2:variable} : ${3:collection}) {",
@@ -77,6 +85,7 @@
         "description": "Advanced for loop"
     },
     "SOQL for loop": {
+        "scope": "apex",
         "prefix": "forsoql",
         "body": [
             "for (${1:sobjectName} ${2:sobjectVar} : [SELECT ${3:fieldNames} FROM ${1:sobjectName}]) {",
@@ -86,6 +95,7 @@
         "description": "SOQL for loop"
     },
     "While": {
+        "scope": "apex",
         "prefix": "while",
         "body": [
             "while (${1:condition}) {",
@@ -95,6 +105,7 @@
         "description": "While loop"
     },
     "Do While": {
+        "scope": "apex",
         "prefix": "dowhile",
         "body": [
             "do {",
@@ -104,6 +115,7 @@
         "description": "Do while loop"
     },
     "System debug without variable": {
+        "scope": "apex",
         "prefix": "debug",
         "body": [
             "System.debug('$1');"
@@ -111,6 +123,7 @@
         "description": "Print debug to log without any variable"
     },
     "System debug with variable": {
+        "scope": "apex",
         "prefix": "debugvar",
         "body": [
             "System.debug('$1: ' + ${2:variable});"
@@ -118,6 +131,7 @@
         "description": "Print debug to log with a variable value"
     },
     "Test method": {
+        "scope": "apex",
         "prefix": "testmethod",
         "body": [
             "@IsTest",
@@ -132,6 +146,7 @@
         "description": "Test method"
     },
     "Assert": {
+        "scope": "apex",
         "prefix": "assert",
         "body": [
             "System.assert(${1:booleanExpression});"
@@ -139,6 +154,7 @@
         "description": "Assert for single boolean expression"
     },
     "Assert Equals": {
+        "scope": "apex",
         "prefix": "asserte",
         "body": [
             "System.assertEquals(${1:expectedValue}, ${2:actualValue});"
@@ -146,6 +162,7 @@
         "description": "Assert for comparing two values"
     },
     "Assert Not Equals": {
+        "scope": "apex",
         "prefix": "assertne",
         "body": [
             "System.assertNotEquals(${1:expectedValue}, ${2:actualValue});"
@@ -153,6 +170,7 @@
         "description": "Assert for comparing two values negative"
     },
     "AuraEnabled method": {
+        "scope": "apex",
         "prefix": "auramethod",
         "body": [
             "@AuraEnabled",
@@ -163,6 +181,7 @@
         "description": "Aura Enabled method"
     },
     "AuraHandledException": {
+        "scope": "apex",
         "prefix": "auraHandledException",
         "body": [
             "throw new AuraHandledException(${1:exceptionMessage});"
@@ -170,6 +189,7 @@
         "description": "Throw the AuraHandledException which can be handled by Aura"
     },
     "Future method": {
+        "scope": "apex",
         "prefix": "futuremethod",
         "body": [
             "@future",
@@ -180,6 +200,7 @@
         "description": "Future method"
     },
     "InvocableMethod": {
+        "scope": "apex",
         "prefix": "invocablemethod",
         "body": [
             "@InvocableMethod(label='${1:label}' description='${2:description}')",
@@ -190,6 +211,7 @@
         "description": "Invocable method to be called from Process/Flow"
     },
     "RemoteAction": {
+        "scope": "apex",
         "prefix": "remoteaction",
         "body": [
             "@RemoteAction",
@@ -200,6 +222,7 @@
         "description": "Remote action method to be called from Visualforce page"
     },
     "Test Setup": {
+        "scope": "apex",
         "prefix": "testsetup",
         "body": [
             "@TestSetup",
@@ -210,6 +233,7 @@
         "description": "Test Setup method"
     },
     "Batch class": {
+        "scope": "apex",
         "prefix": "batchclass",
         "body": [
             "public class ${1:className} implements Database.Batchable<sObject> {\n",
@@ -226,6 +250,7 @@
         "description": "Batch class"
     },
     "Schedulable class": {
+        "scope": "apex",
         "prefix": "schedulableclass",
         "body": [
             "public class ${1:className} implements Schedulable {\n",
@@ -236,6 +261,7 @@
         "description": "Schedulable class"
     },
     "Test class": {
+        "scope": "apex",
         "prefix": "testclass",
         "body": [
             "@IsTest",
@@ -253,6 +279,7 @@
         "description": "Test class"
     },
     "try-catch": {
+        "scope": "apex",
         "prefix": "tryc",
         "body": [
             "try {",
@@ -265,6 +292,7 @@
         "description": "Try Catch"
     },
     "try-catch-finally": {
+        "scope": "apex",
         "prefix": "tryc",
         "body": [
             "try {",
@@ -280,6 +308,7 @@
         "description": "Try Catch Finally"
     },
     "SOQL": {
+        "scope": "apex",
         "prefix": "soql",
         "body": [
             "[SELECT ${1:field1, field2} FROM ${2:SobjectName} WHERE ${3:clause}];"
@@ -287,6 +316,7 @@
         "description": "Apex SOQL query"
     },
     "Database Query": {
+        "scope": "apex",
         "prefix": "dbquery",
         "body": [
             "List<${1:sObject}> ${2:sobjects} = Database.query(${3:queryString});"
@@ -294,6 +324,7 @@
         "description": "Database.query for dynamic queries"
     },
     "Database Insert Single": {
+        "scope": "apex",
         "prefix": "dbinserts",
         "body": [
             "Database.SaveResult insertResult = Database.insert(${1:recordToInsert});"
@@ -301,6 +332,7 @@
         "description": "Database.insert single record"
     },
     "Database Insert Multiple": {
+        "scope": "apex",
         "prefix": "dbinsertm",
         "body": [
             "Database.SaveResult[] insertResults = Database.insert(${1:recordsToInsert});"
@@ -308,6 +340,7 @@
         "description": "Database.insert multiple records"
     },
     "Database Update Single": {
+        "scope": "apex",
         "prefix": "dbupdates",
         "body": [
             "Database.SaveResult updateResult = Database.update(${1:recordToUpdate});"
@@ -315,6 +348,7 @@
         "description": "Database.update single record"
     },
     "Database Update Multiple": {
+        "scope": "apex",
         "prefix": "dbupdatem",
         "body": [
             "Database.SaveResult[] updateResults = Database.update(${1:recordsToUpdate});"
@@ -322,6 +356,7 @@
         "description": "Database.update multiple records"
     },
     "Database Delete Single": {
+        "scope": "apex",
         "prefix": "dbdeletes",
         "body": [
             "Database.DeleteResult deleteResult = Database.delete(${1:recordToDelete});"
@@ -329,6 +364,7 @@
         "description": "Database.delete single record"
     },
     "Database Delete Multiple": {
+        "scope": "apex",
         "prefix": "dbdeletem",
         "body": [
             "Database.DeleteResult[] deleteResults = Database.delete(${1:recordsToDelete});"
@@ -336,6 +372,7 @@
         "description": "Database.delete multiple records"
     },
     "Add Savepoint": {
+        "scope": "apex",
         "prefix": "savepoint",
         "body": [
             "System.Savepoint ${1:savepoint} = Database.setSavepoint();"
@@ -343,6 +380,7 @@
         "description": "Create Savepoint"
     },
     "Rollback": {
+        "scope": "apex",
         "prefix": "rollback",
         "body": [
             "Database.rollback(${1:savepoint});"
@@ -350,6 +388,7 @@
         "description": "Rollback"
     },
     "Savepoint with rollback": {
+        "scope": "apex",
         "prefix": "savepoint-with-rollback",
         "body": [
             "System.Savepoint ${1:savepoint} = Database.setSavepoint();",
@@ -359,6 +398,7 @@
         "description": "Savepoint and rollback"
     },
     "Ternary expression": {
+        "scope": "apex",
         "prefix": "ternary",
         "body": [
             "${1:condition} ? ${2:exprIfTrue} : ${3:exprIfFalse}"
@@ -366,6 +406,7 @@
         "description": "Ternary expression"
     },
     "HTTP request": {
+        "scope": "apex",
         "prefix": "http-request",
         "body": [
             "Http httpObject = new Http();",
@@ -378,6 +419,7 @@
         "description": "Basic HTTP request"
     },
     "Suppress PMD Warning": {
+        "scope": "apex",
         "prefix": "suppress-warning",
         "body": [
             "@SuppressWarnings('${1}')"

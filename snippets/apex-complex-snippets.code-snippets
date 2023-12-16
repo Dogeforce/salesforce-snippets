@@ -1,0 +1,23 @@
+{
+    "Invocable Action": {
+        "scope": "apex",
+        "prefix": "invocableaction",
+        "body": [
+            "public class ${1:ClassName} {",
+            "\t@InvocableMethod(label='${2:ActionLabel}', description='${3:Description}')",
+            "\tpublic static List<${1:ClassName}Output> execute(List<${1:ClassName}Input> ${4:input}) {",
+            "\t\t// TODO: ${0:implement}",
+            "\t}",
+            "\t",
+            "\tpublic class ${1:ClassName}Input {",
+            "\t\t@InvocableVariable(label='${5:Label}', description='${6:Description}')",
+            "\t\tpublic ${7:variableType} ${8:variableName};",
+            "\t}",
+            "\t",
+            "\tpublic class ${1:ClassName}Output {",
+            "\t}",
+            "}"
+        ],
+        "description": "A full invocable action snippet."
+    }
+}
