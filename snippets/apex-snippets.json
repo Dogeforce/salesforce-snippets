@@ -349,15 +349,15 @@
         ],
         "description": "Rollback"
     },
-	"Savepoint with rollback": {
-		"prefix": "savepoint-with-rollback",
+    "Savepoint with rollback": {
+        "prefix": "savepoint-with-rollback",
         "body": [
-			"System.Savepoint ${1:savepoint} = Database.setSavepoint();",
-			"${0}",
+            "System.Savepoint ${1:savepoint} = Database.setSavepoint();",
+            "${0}",
             "Database.rollback(${1:savepoint});"
         ],
         "description": "Savepoint and rollback"
-	},
+    },
     "Ternary expression": {
         "prefix": "ternary",
         "body": [
